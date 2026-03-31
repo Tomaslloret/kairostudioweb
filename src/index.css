@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 220 26% 14%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 26% 14%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 26% 14%;
+
+    --primary: 224 70% 33%;
+    --primary-foreground: 0 0% 100%;
+
+    --primary-dark: 224 72% 24%;
+    --primary-light: 222 100% 96%;
+
+    --secondary: 27 87% 53%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 220 14% 96%;
+    --muted-foreground: 218 11% 45%;
+
+    --accent: 27 87% 53%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 224 70% 33% / 0.12;
+    --input: 220 13% 91%;
+    --ring: 224 70% 33%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 224 70% 33%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 224 70% 33%;
+
+    --font-heading: 'Sora', sans-serif;
+    --font-body: 'Inter', sans-serif;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+@layer utilities {
+  .gradient-hero {
+    background: linear-gradient(135deg, hsl(224 70% 33%), hsl(224 72% 20%));
+  }
+
+  .gradient-cta {
+    background: linear-gradient(135deg, hsl(27 87% 53%), hsl(27 87% 45%));
+  }
+
+  .text-gradient {
+    background: linear-gradient(135deg, hsl(224 70% 33%), hsl(27 87% 53%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .card-kairon {
+    @apply bg-card rounded-xl border border-primary/10 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-20 px-4;
+  }
+}
+
+@layer components {
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+  }
+
+  .animate-arrow-up {
+    animation: arrowUp 2s ease-in-out infinite;
+  }
+
+  @keyframes arrowUp {
+    0%, 100% { transform: translateY(0); opacity: 0.7; }
+    50% { transform: translateY(-8px); opacity: 1; }
+  }
+}
