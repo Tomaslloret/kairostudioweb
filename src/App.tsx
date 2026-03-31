@@ -8,7 +8,6 @@ import Index from "./pages/Index.tsx";
 import Servicios from "./pages/Servicios.tsx";
 import Demos from "./pages/Demos.tsx";
 import SobreMi from "./pages/SobreMi.tsx";
-import Contacto from "./pages/Contacto.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
@@ -24,7 +23,6 @@ const App = () => (
           <Route path="/servicios" element={<Servicios />} />
           <Route path="/demos" element={<Demos />} />
           <Route path="/sobre-mi" element={<SobreMi />} />
-          <Route path="/contacto" element={<Contacto />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <WhatsAppButton />

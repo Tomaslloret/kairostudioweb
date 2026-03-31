@@ -19,7 +19,6 @@ const Footer = () => (
             { label: "Inicio", href: "/" },
             { label: "Servicios", href: "/servicios" },
             { label: "Demos", href: "/demos" },
-            { label: "Contacto", href: "/contacto" },
           ].map((l) => (
             <Link key={l.href} to={l.href} className="block text-sm text-primary-foreground/80 hover:text-secondary transition-colors">
               {l.label}
