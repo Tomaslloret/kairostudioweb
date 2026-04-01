@@ -9,6 +9,12 @@ const includes = [
   { icon: Palette, title: "Propuesta personalizada", desc: "Sin plantillas. Todo pensado para vos." },
 ];
 
+const demos = [
+  { label: "Restaurante", url: "https://humodebrasas.vercel.app", img: "/demorestaurante.png" },
+  { label: "Consultorio", url: "https://rossi-care-connect.vercel.app", img: "/democlinica.png" },
+  { label: "Estudio creativo", url: "https://forma-studio-portfolio.vercel.app", img: "/demoformaestudio.png" },
+];
+
 const DemosPage = () => (
   <>
     <Header />
@@ -44,13 +50,25 @@ const DemosPage = () => (
         <div className="container max-w-4xl text-center space-y-6">
           <h2 className="font-heading font-bold text-2xl text-primary">Ejemplos de demos</h2>
           <div className="grid sm:grid-cols-3 gap-6">
-            {["Restaurante", "Consultorio", "Estudio creativo"].map((label) => (
-              <div key={label} className="card-kairon overflow-hidden">
-                <div className="h-40 bg-muted flex items-center justify-center">
-                  <span className="text-muted-foreground text-sm">Mockup</span>
+            {demos.map((demo) => (
+              <div key={demo.label} className="card-kairon overflow-hidden group">
+                <div className="h-40 overflow-hidden rounded-t-xl border-b border-primary/5">
+                  <img
+                    src={demo.img}
+                    alt={`Demo ${demo.label}`}
+                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                  />
                 </div>
-                <div className="p-4">
-                  <p className="font-heading font-semibold text-sm text-foreground">{label}</p>
+                <div className="p-4 space-y-3">
+                  <p className="font-heading font-semibold text-sm text-foreground">{demo.label}</p>
+                  <a
+                    href={demo.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block text-center text-sm py-2 px-4 rounded-lg font-medium transition gradient-hero text-primary-foreground hover:opacity-90"
+                  >
+                    Ver demo
+                  </a>
                 </div>
               </div>
             ))}

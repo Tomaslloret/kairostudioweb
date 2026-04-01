@@ -2,9 +2,9 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
 const demos = [
-  { category: "Gastronomía" },
-  { category: "Salud" },
-  { category: "Servicios" },
+  { category: "Gastronomía", url: "https://humodebrasas.vercel.app", img: "/demorestaurante.png" },
+  { category: "Salud", url: "https://rossi-care-connect.vercel.app", img: "/democlinica.png" },
+  { category: "Servicios", url: "https://forma-studio-portfolio.vercel.app", img: "/demoformaestudio.png" },
 ];
 
 const DemosPreview = () => (
@@ -22,26 +22,28 @@ const DemosPreview = () => (
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
         {demos.map((demo, index) => (
           <div key={index} className="card-kairon overflow-hidden group">
-            {/* Área de imagen/screenshot */}
-            <div className="h-48 bg-[#F3F4F6] flex items-center justify-center rounded-t-lg border-b border-primary/5">
-              <span className="text-muted-foreground text-sm font-medium">Demo próximamente</span>
+            <div className="h-48 overflow-hidden rounded-t-lg border-b border-primary/5">
+              <img
+                src={demo.img}
+                alt={`Demo ${demo.category}`}
+                className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+              />
             </div>
-            
-            {/* Contenido de la tarjeta */}
             <div className="p-5 space-y-3">
               <div className="inline-block">
                 <span className="inline-block px-3 py-1 bg-secondary/10 text-secondary text-xs font-medium rounded-full">
                   {demo.category}
                 </span>
               </div>
-              
               <div className="pt-1">
-                <Link 
-                  to="/demos" 
+                <a
+                  href={demo.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-1 text-sm text-secondary hover:text-secondary/80 transition-colors font-medium"
                 >
                   Ver demo →
-                </Link>
+                </a>
               </div>
             </div>
           </div>
