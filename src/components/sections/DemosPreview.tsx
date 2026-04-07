@@ -2,9 +2,9 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
 const demos = [
-  { category: "Gastronomía", url: "https://humodebrasas.vercel.app", img: "/demorestaurante.png" },
-  { category: "Salud", url: "https://rossi-care-connect.vercel.app", img: "/democlinica.png" },
-  { category: "Servicios", url: "https://forma-studio-portfolio.vercel.app", img: "/demoformaestudio.png" },
+  { category: "Gastronomía", url: "https://llamaylena.vercel.app", img: "/demorestaurante.png" },
+  { category: "Salud", url: "https://dracarolinamendez.vercel.app", img: "/democlinica.png" },
+  { category: "Servicios", url: "https://trazostudio.vercel.app", img: "/demoformaestudio.png" },
 ];
 
 const DemosPreview = () => (
