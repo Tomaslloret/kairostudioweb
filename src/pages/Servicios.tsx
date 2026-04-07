@@ -24,7 +24,7 @@ const plans = [
     name: "Kairos Premium",
     subtitle: "Web de alto impacto",
     ideal: "Negocios con ticket alto, marcas premium.",
-    includes: ["Diseño multi-sección premium", "Estrategia + branding visual", "SEO avanzado", "Animaciones personalizadas", "Integraciones a medida", "Analítica completa", "Soporte prioritario"],
+    includes: ["Diseño multi-sección premium", "Estrategia + branding visual", "SEO avanzado", "Integraciones a medida", "Analítica completa"],
     icon: Crown,
   },
 ];
