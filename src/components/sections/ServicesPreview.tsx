@@ -1,4 +1,4 @@
-import { Layout, Building2, UtensilsCrossed, Crown } from "lucide-react";
+import { Layout, Building2, UtensilsCrossed } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
@@ -21,12 +21,6 @@ const services = [
     desc: "Menú digital, reservas online y todo lo que tu restaurante necesita. Disponible como servicio especializado.",
     audience: "Restaurantes, cafeterías, bares.",
   },
-  {
-    icon: Crown,
-    title: "Web premium",
-    desc: "Diseño de alto impacto con estrategia, branding y funcionalidades avanzadas.",
-    audience: "Negocios con ticket alto.",
-  },
 ];
 
 const ServicesPreview = () => (
@@ -41,7 +35,7 @@ const ServicesPreview = () => (
         </p>
       </div>
 
-      <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {services.map((s) => (
           <div key={s.title} className="card-kairon p-6 flex flex-col gap-4">
             <div className="w-12 h-12 rounded-xl gradient-hero flex items-center justify-center">
