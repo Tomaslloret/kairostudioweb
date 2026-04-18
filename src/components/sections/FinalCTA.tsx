@@ -13,7 +13,7 @@ const FinalCTA = () => (
       </p>
       <div className="flex flex-wrap justify-center gap-4 pt-2">
         <Button variant="hero" size="lg" asChild>
-          <Link to="/demos">Pedir demo gratis</Link>
+          <Link to="/demos">Pedir demo</Link>
         </Button>
         <Button variant="outline-light" size="lg" asChild>
           <a href="https://instagram.com/kaironstudio_" target="_blank" rel="noopener noreferrer">

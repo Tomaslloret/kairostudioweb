@@ -40,7 +40,7 @@ const Header = () => {
             </a>
           </Button>
           <Button variant="cta" size="sm" asChild>
-            <Link to="/demos">Pedir demo gratis</Link>
+            <Link to="/demos">Pedir demo</Link>
           </Button>
         </div>
 
@@ -66,7 +66,7 @@ const Header = () => {
             ))}
             <div className="flex flex-col gap-2 pt-3 border-t border-primary/10">
               <Button variant="cta" asChild>
-                <Link to="/demos" onClick={() => setOpen(false)}>Pedir demo gratis</Link>
+                <Link to="/demos" onClick={() => setOpen(false)}>Pedir demo</Link>
               </Button>
               <Button variant="outline" asChild>
                 <a href="https://instagram.com/kaironstudio_" target="_blank" rel="noopener noreferrer">

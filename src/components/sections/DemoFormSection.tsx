@@ -171,7 +171,7 @@ const DemoFormSection = () => {
             {/* Botones ancho completo */}
             <div className="flex flex-wrap gap-3 pt-2">
               <Button variant="cta" size="lg" type="submit" disabled={loading}>
-                {loading ? "Enviando..." : "Quiero mi demo gratis"}
+                {loading ? "Enviando..." : "Quiero mi demo"}
               </Button>
               <Button variant="outline" size="lg" asChild>
                 <a href="https://instagram.com/kaironstudio_" target="_blank" rel="noopener noreferrer">

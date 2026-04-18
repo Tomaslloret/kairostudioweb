@@ -33,7 +33,7 @@ const HeroSection = () => (
 
           <div className="flex flex-wrap gap-4">
             <Button variant="hero" size="lg" asChild>
-              <Link to="/demos">Pedir demo gratis</Link>
+              <Link to="/demos">Pedir demo</Link>
             </Button>
             <Button variant="outline-light" size="lg" asChild>
               <a href="#proceso">Ver cómo trabajamos</a>

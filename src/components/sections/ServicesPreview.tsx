@@ -45,7 +45,7 @@ const ServicesPreview = () => (
             <p className="text-sm text-muted-foreground flex-1">{s.desc}</p>
             <p className="text-xs text-secondary font-medium">Para: {s.audience}</p>
             <Button variant="cta" size="sm" asChild className="mt-2">
-              <Link to="/demos">Pedir demo gratis</Link>
+              <Link to="/demos">Pedir demo</Link>
             </Button>
           </div>
         ))}
