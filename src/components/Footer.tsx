@@ -28,8 +28,8 @@ const Footer = () => (
 
         <div className="space-y-3">
           <h4 className="font-heading font-semibold text-sm uppercase tracking-wider text-primary-foreground/50">Contacto</h4>
-          <a href="https://instagram.com/kaironstudio_" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-primary-foreground/80 hover:text-secondary transition-colors">
-            <Instagram className="w-4 h-4" /> @kaironstudio_
+          <a href="https://instagram.com/kaironstudios_" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-primary-foreground/80 hover:text-secondary transition-colors">
+            <Instagram className="w-4 h-4" /> @kaironstudios_
           </a>
           <a href="mailto:kaironargentina@gmail.com" className="flex items-center gap-2 text-sm text-primary-foreground/80 hover:text-secondary transition-colors">
             <Mail className="w-4 h-4" /> kaironargentina@gmail.com

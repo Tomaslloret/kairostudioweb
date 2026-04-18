@@ -16,7 +16,7 @@ const FinalCTA = () => (
           <Link to="/demos">Pedir demo</Link>
         </Button>
         <Button variant="outline-light" size="lg" asChild>
-          <a href="https://instagram.com/kaironstudio_" target="_blank" rel="noopener noreferrer">
+          <a href="https://instagram.com/kaironstudios_" target="_blank" rel="noopener noreferrer">
             <Instagram className="w-4 h-4" /> Instagram
           </a>
         </Button>

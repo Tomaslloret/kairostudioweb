@@ -174,7 +174,7 @@ const DemoFormSection = () => {
                 {loading ? "Enviando..." : "Quiero mi demo"}
               </Button>
               <Button variant="outline" size="lg" asChild>
-                <a href="https://instagram.com/kaironstudio_" target="_blank" rel="noopener noreferrer">
+                <a href="https://instagram.com/kaironstudios_" target="_blank" rel="noopener noreferrer">
                   <Instagram className="w-4 h-4" /> Escribirme por Instagram
                 </a>
               </Button>

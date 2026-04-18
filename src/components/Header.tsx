@@ -35,7 +35,7 @@ const Header = () => {
 
         <div className="hidden md:flex items-center gap-3">
           <Button variant="outline" size="sm" asChild>
-            <a href="https://instagram.com/kaironstudio_" target="_blank" rel="noopener noreferrer">
+            <a href="https://instagram.com/kaironstudios_" target="_blank" rel="noopener noreferrer">
               <Instagram className="w-4 h-4" /> Instagram
             </a>
           </Button>
@@ -69,7 +69,7 @@ const Header = () => {
                 <Link to="/demos" onClick={() => setOpen(false)}>Pedir demo</Link>
               </Button>
               <Button variant="outline" asChild>
-                <a href="https://instagram.com/kaironstudio_" target="_blank" rel="noopener noreferrer">
+                <a href="https://instagram.com/kaironstudios_" target="_blank" rel="noopener noreferrer">
                   <Instagram className="w-4 h-4" /> Instagram
                 </a>
               </Button>
