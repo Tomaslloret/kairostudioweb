@@ -10,9 +10,9 @@ const includes = [
 ];
 
 const demos = [
-  { label: "Restaurante", category: "Gastronomía", url: "https://llamaylenarg.vercel.app", img: "/demorestaurante.png" },
-  { label: "Consultorio", category: "Salud", url: "https://dracarolinamendez.vercel.app", img: "/democlinica.png" },
-  { label: "Estudio creativo", category: "Servicios", url: "https://trazostudio.vercel.app", img: "/demoformaestudio.png" },
+  { label: "Restaurante", category: "Gastronomía", url: "https://llamaylena.kaironstudios.com", img: "/demorestaurante.png" },
+  { label: "Consultorio", category: "Salud", url: "https://dracarolina.kaironstudios.com", img: "/democlinica.png" },
+  { label: "Estudio creativo", category: "Servicios", url: "https://trazostudio.kaironstudios.com", img: "/demoformaestudio.png" },
 ];
 
 const DemosPage = () => (
